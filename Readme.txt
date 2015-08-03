@@ -8,3 +8,7 @@ These page Has Grid with all books in the Library.
 You can sort BookName\Author colums or add filter to isAvailable Column.
 Grid has contextmenu that represents Library work: You can Take or Return book to the Library.
 Grid works on RightClick.  
+
+
+
+P.S. If Database will not contains Data you should manually install connection to DATAFOLDER: App_Data\LibraryContext.mdf
