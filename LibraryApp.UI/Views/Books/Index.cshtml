@@ -1,0 +1,37 @@
+﻿@model IEnumerable<LibraryApp.UI.Models.BookViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@ViewBag.Name
+
+<div>
+    <table id="grid"></table>
+    <div id="pager"></div>
+</div>
+
+<div class="contextMenu" id="myMenu1" style="display:none">
+    <ul style="width: 200px">
+        <li id="take">
+            <span class="ui-icon ui-icon-check" style="float:left"></span>
+            <span style="font-size:11px; font-family:Verdana">Take Book</span>
+        </li>
+        <li id="return">
+            <span class="ui-icon ui-icon-arrowreturn-1-w" style="float:left"></span>
+            <span style="font-size:11px; font-family:Verdana">Return Book</span>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="../..//Content/jquery.jqGrid/ui.jqgrid.css" rel="stylesheet" />
+
+<script src="~/Scripts/jquery-ui-1.10.0.min.js"></script>
+<script src="~/Scripts/i18n/grid.locale-en.js"></script>
+<script src="~/Scripts/jquery.jqGrid.min.js"></script>
+<script src="~/Scripts/jquery.contextmenu.js"> </script>
+<script src="~/Scripts/BookList/BookList.js"></script>
